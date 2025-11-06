@@ -1,10 +1,10 @@
 <!-- contacto.html -->
 <!DOCTYPE html>
-<html lang="es">
+<html lang="ca">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>ACERS - Contacto</title>
+    <title>ACERS - Contacte</title>
     <link rel="stylesheet" href="styles.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -17,35 +17,35 @@
     <nav class="fixed top-0 left-0 right-0 bg-black bg-opacity-80 backdrop-blur-md z-50">
         <div class="container mx-auto px-6 py-4 flex justify-between items-center">
             <div class="flex space-x-8">
-                <a href="index.html" class="text-white hover:text-red-500 transition">INICIO</a>
-                <a href="trabajos.html" class="text-white hover:text-red-500 transition">NUESTROS TRABAJOS</a>
-                <a href="contacto.html" class="text-white hover:text-red-500 transition">CONTÁCTANOS</a>
+                <a href="index.html" class="text-white hover:text-red-500 transition">INICI</a>
+                <a href="trabajos.html" class="text-white hover:text-red-500 transition">ELS NOSTRES TREBALLS</a>
+                <a href="contacto.html" class="text-white hover:text-red-500 transition">CONTACTA’NS</a>
             </div>
             <div class="pr-4">
-                <img src="FOTOS/logo.png" alt="ACERS Logo" class="h-12">
+                <img src="FOTOS/logo.png" alt="Logo ACERS" class="h-12">
             </div>
         </div>
     </nav>
 
     <!-- Main Content -->
     <main class="pt-32 pb-20 container mx-auto px-4 max-w-4xl">
-        <h2 class="text-4xl font-bold mb-12 text-center">Contáctanos</h2>
+        <h2 class="text-4xl font-bold mb-12 text-center">Contacta’ns</h2>
         
         <div class="grid grid-cols-1 md:grid-cols-2 gap-12">
             <div>
-                <h3 class="text-2xl font-bold mb-6 text-red-500">Información de contacto</h3>
+                <h3 class="text-2xl font-bold mb-6 text-red-500">Informació de contacte</h3>
                 <div class="space-y-4">
                     <div class="flex items-start">
                         <i data-feather="phone" class="mr-4 mt-1 text-red-500"></i>
                         <div>
-                            <p class="font-bold">Teléfono:</p>
+                            <p class="font-bold">Telèfon:</p>
                             <p>+34 123 456 789</p>
                         </div>
                     </div>
                     <div class="flex items-start">
                         <i data-feather="mail" class="mr-4 mt-1 text-red-500"></i>
                         <div>
-                            <p class="font-bold">Email:</p>
+                            <p class="font-bold">Correu electrònic:</p>
                             <p>polcasi10@gmail.com</p>
                         </div>
                     </div>
@@ -55,26 +55,26 @@
             <div>
                 <form id="contact-form" class="space-y-6">
                     <div>
-                        <label for="name" class="block mb-2">Nombre completo</label>
+                        <label for="name" class="block mb-2">Nom complet</label>
                         <input type="text" id="name" name="name" required class="w-full bg-gray-800 border border-gray-700 rounded-lg px-4 py-3 focus:outline-none focus:ring-2 focus:ring-red-500">
                     </div>
                     <div>
-                        <label for="email" class="block mb-2">Correo electrónico</label>
+                        <label for="email" class="block mb-2">Correu electrònic</label>
                         <input type="email" id="email" name="email" required class="w-full bg-gray-800 border border-gray-700 rounded-lg px-4 py-3 focus:outline-none focus:ring-2 focus:ring-red-500">
                     </div>
                     <div>
-                        <label for="phone" class="block mb-2">Teléfono</label>
+                        <label for="phone" class="block mb-2">Telèfon</label>
                         <input type="tel" id="phone" name="phone" class="w-full bg-gray-800 border border-gray-700 rounded-lg px-4 py-3 focus:outline-none focus:ring-2 focus:ring-red-500">
                     </div>
                     <div>
-                        <label for="job" class="block mb-2">Trabajo a solicitar</label>
-                        <textarea id="job" name="job" rows="3" class="w-full bg-gray-800 border border-gray-700 rounded-lg px-4 py-3 focus:outline-none focus:ring-2 focus:ring-red-500" placeholder="Ej: Quiero una puerta de acero para mi garaje"></textarea>
+                        <label for="job" class="block mb-2">Treball a sol·licitar</label>
+                        <textarea id="job" name="job" rows="3" class="w-full bg-gray-800 border border-gray-700 rounded-lg px-4 py-3 focus:outline-none focus:ring-2 focus:ring-red-500" placeholder="Ex: Vull una porta d’acer per al meu garatge"></textarea>
                     </div>
                     <div>
-                        <label for="message" class="block mb-2">Mensaje</label>
+                        <label for="message" class="block mb-2">Missatge</label>
                         <textarea id="message" name="message" rows="4" class="w-full bg-gray-800 border border-gray-700 rounded-lg px-4 py-3 focus:outline-none focus:ring-2 focus:ring-red-500"></textarea>
                     </div>
-                    <button type="submit" class="bg-red-600 hover:bg-red-700 text-white px-8 py-3 rounded-lg transition w-full">Enviar mensaje</button>
+                    <button type="submit" class="bg-red-600 hover:bg-red-700 text-white px-8 py-3 rounded-lg transition w-full">Enviar missatge</button>
                 </form>
             </div>
         </div>
@@ -85,9 +85,9 @@
         <div class="bg-gray-900 rounded-lg p-8 max-w-md w-full mx-4 border border-gray-800">
             <div class="text-center">
                 <i data-feather="check-circle" class="mx-auto text-green-500 w-16 h-16 mb-4"></i>
-                <h3 class="text-2xl font-bold mb-4" id="modal-title">Gracias <span id="modal-name"></span>, formulario enviado correctamente</h3>
-                <p class="mb-6">Nos pondremos en contacto pronto</p>
-                <button id="close-modal" class="bg-red-600 hover:bg-red-700 text-white px-6 py-2 rounded-lg transition">Cerrar</button>
+                <h3 class="text-2xl font-bold mb-4" id="modal-title">Gràcies <span id="modal-name"></span>, formulari enviat correctament</h3>
+                <p class="mb-6">Ens posarem en contacte ben aviat</p>
+                <button id="close-modal" class="bg-red-600 hover:bg-red-700 text-white px-6 py-2 rounded-lg transition">Tancar</button>
             </div>
         </div>
     </div>
@@ -104,30 +104,24 @@
             form.addEventListener('submit', function(e) {
                 e.preventDefault();
                 
-                // Get form data
                 const name = document.getElementById('name').value;
                 
-                // Show modal with name
                 modalName.textContent = name;
                 modal.classList.remove('hidden');
                 
-                // Reset form
                 form.reset();
             });
             
-            // Close modal
             closeModal.addEventListener('click', function() {
                 modal.classList.add('hidden');
             });
             
-            // Close modal when clicking outside
             modal.addEventListener('click', function(e) {
                 if (e.target === modal) {
                     modal.classList.add('hidden');
                 }
             });
             
-            // Close modal with ESC key
             document.addEventListener('keydown', function(e) {
                 if (e.key === 'Escape') {
                     modal.classList.add('hidden');
