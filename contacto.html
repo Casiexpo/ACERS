@@ -1,0 +1,86 @@
+<!-- trabajos.html -->
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ACERS - Nuestros Trabajos</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://cdn.jsdelivr.net/npm/feather-icons/dist/feather.min.js"></script>
+</head>
+<body class="font-montserrat bg-black text-white">
+    <!-- Navigation -->
+    <nav class="fixed top-0 left-0 right-0 bg-black bg-opacity-80 backdrop-blur-md z-50">
+        <div class="container mx-auto px-6 py-4 flex justify-between items-center">
+            <div class="flex space-x-8">
+                <a href="index.html" class="text-white hover:text-red-500 transition">INICIO</a>
+                <a href="trabajos.html" class="text-white hover:text-red-500 transition">NUESTROS TRABAJOS</a>
+                <a href="contacto.html" class="text-white hover:text-red-500 transition">CONTÁCTANOS</a>
+            </div>
+            <div class="pr-4">
+                <img src="FOTOS/logo.png" alt="ACERS Logo" class="h-12">
+            </div>
+        </div>
+    </nav>
+
+    <!-- Main Content -->
+    <main class="pt-32 pb-20 container mx-auto px-4">
+        <h2 class="text-4xl font-bold mb-12 text-center">Nuestros Trabajos</h2>
+        
+        <!-- Work Gallery -->
+        <div class="space-y-20">
+            <!-- Work 1 -->
+            <div class="flex flex-col lg:flex-row gap-8 items-center">
+                <div class="lg:w-1/2">
+                    <img src="FOTOS/Projecte 1.jpg" alt="Puerta de acero" class="w-full rounded-lg shadow-xl">
+                </div>
+                <div class="lg:w-1/2">
+                    <h3 class="text-2xl font-bold mb-4 text-red-500">PUERTA DE ACERO</h3>
+                    <p class="text-gray-300">Puerta de acero macizo con refuerzos internos y sistema de seguridad de alta resistencia. Fabricada con materiales de primera calidad y terminaciones personalizadas según requerimientos del cliente.</p>
+                </div>
+            </div>
+            
+            <!-- Work 2 -->
+            <div class="flex flex-col lg:flex-row gap-8 items-center">
+                <div class="lg:w-1/2">
+                    <img src="FOTOS/Projecte 2.jpg" alt="Escalera industrial" class="w-full rounded-lg shadow-xl">
+                </div>
+                <div class="lg:w-1/2">
+                    <h3 class="text-2xl font-bold mb-4 text-red-500">ESCALERA INDUSTRIAL</h3>
+                    <p class="text-gray-300">Estructura metálica diseñada para espacios industriales con barandillas de seguridad y peldaños antideslizantes. Fabricada en acero inoxidable con tratamiento anticorrosivo.</p>
+                </div>
+            </div>
+            
+            <!-- Work 3 -->
+            <div class="flex flex-col lg:flex-row gap-8 items-center">
+                <div class="lg:w-1/2">
+                    <img src="FOTOS/Projecte 3.jpg" alt="Barandilla moderna" class="w-full rounded-lg shadow-xl">
+                </div>
+                <div class="lg:w-1/2">
+                    <h3 class="text-2xl font-bold mb-4 text-red-500">BARANDILLA MODERNA</h3>
+                    <p class="text-gray-300">Barandilla de diseño contemporáneo con estructura en acero y vidrio templado. Perfecta para interiores modernos con requerimientos de seguridad y elegancia.</p>
+                </div>
+            </div>
+            
+            <!-- Work 4 -->
+            <div class="flex flex-col lg:flex-row gap-8 items-center">
+                <div class="lg:w-1/2">
+                    <img src="FOTOS/Projecte 4.jpg" alt="Estructura comercial" class="w-full rounded-lg shadow-xl">
+                </div>
+                <div class="lg:w-1/2">
+                    <h3 class="text-2xl font-bold mb-4 text-red-500">ESTRUCTURA COMERCIAL</h3>
+                    <p class="text-gray-300">Estructura metálica para local comercial con diseño personalizado que combina funcionalidad y estética. Fabricada con perfiles de acero galvanizado y terminaciones premium.</p>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <script>
+        feather.replace();
+    </script>
+</body>
+</html>
