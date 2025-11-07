@@ -13,20 +13,35 @@
     <script src="https://cdn.jsdelivr.net/npm/feather-icons/dist/feather.min.js"></script>
 </head>
 <body class="font-montserrat bg-black text-white">
-    <!-- Navigation -->
-    <nav class="fixed top-0 left-0 right-0 bg-black bg-opacity-80 backdrop-blur-md z-50">
-        <div class="container mx-auto px-6 py-4 flex justify-between items-center">
-            <div class="flex space-x-8">
-                <a href="index.html" class="text-white hover:text-red-500 transition">INICI</a>
-                <a href="trabajos.html" class="text-white hover:text-red-500 transition">TREBALLS</a>
-                <a href="materials.html" class="text-white hover:text-red-500 transition">MATERIALS</a>
-                <a href="contacto.html" class="text-white hover:text-red-500 transition">CONTACTA’NS</a>
-            </div>
-            <div class="pr-4">
-                <img src="FOTOS/logo.png" alt="Logo ACERS" class="h-12">
-            </div>
-        </div>
-    </nav>
+  <!-- Navigation -->
+  <nav class="fixed top-0 left-0 right-0 bg-black bg-opacity-80 backdrop-blur-md z-50">
+    <div class="container mx-auto px-6 py-4 flex justify-between items-center relative">
+
+      <!-- Left: logo + hamburger -->
+      <div class="flex items-center space-x-4">
+        <button id="menu-toggle" class="text-white focus:outline-none md:hidden" aria-label="Toggle menu">
+          <i data-feather="menu" class="w-6 h-6"></i>
+        </button>
+        <img src="FOTOS/logo.png" alt="Logo ACERS" class="h-12">
+      </div>
+
+      <!-- Desktop Menu -->
+      <div id="menu" class="hidden md:flex space-x-8">
+        <a href="index.html" class="text-white hover:text-red-500 transition">INICI</a>
+        <a href="trabajos.html" class="text-red-500 border-b-2 border-red-500 pb-1">TREBALLS</a>
+        <a href="materials.html" class="text-white hover:text-red-500 transition">MATERIALS</a>
+        <a href="contacto.html" class="text-white hover:text-red-500 transition">CONTACTA’NS</a>
+      </div>
+
+      <!-- Mobile dropdown -->
+      <div id="mobile-menu" class="hidden absolute top-full left-0 w-full bg-black bg-opacity-95 flex flex-col space-y-4 py-6 items-center md:hidden">
+        <a href="index.html" class="text-white hover:text-red-500 transition">INICI</a>
+        <a href="trabajos.html" class="text-red-500 border-b-2 border-red-500 pb-1">TREBALLS</a>
+        <a href="materials.html" class="text-white hover:text-red-500 transition">MATERIALS</a>
+        <a href="contacto.html" class="text-white hover:text-red-500 transition">CONTACTA’NS</a>
+      </div>
+    </div>
+  </nav>
 
     <!-- Main Content -->
     <main class="pt-32 pb-20 container mx-auto px-4">
@@ -83,8 +98,22 @@
     </main>
 
     <script>
-        feather.replace();
+      feather.replace();
+
+      const toggle = document.getElementById('menu-toggle');
+      const mobileMenu = document.getElementById('mobile-menu');
+
+      toggle.addEventListener('click', (e) => {
+        e.stopPropagation();
+        mobileMenu.classList.toggle('hidden');
+      });
+
+      document.addEventListener('click', (e) => {
+        if (!mobileMenu.classList.contains('hidden')) {
+          const isClickInside = mobileMenu.contains(e.target) || toggle.contains(e.target);
+          if (!isClickInside) mobileMenu.classList.add('hidden');
+        }
+      });
     </script>
 </body>
 </html>
-
